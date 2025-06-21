@@ -74,3 +74,11 @@ canvas {
   font-size: 48px;
   color: red;
 }
+.falling-image {
+  position: absolute;
+  top: -80px;
+  width: 80px;
+  height: 80px;
+  animation: fall-img linear infinite;
+  user-select: none;
+}
