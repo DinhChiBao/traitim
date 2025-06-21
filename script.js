@@ -66,3 +66,23 @@ function draw() {
 }
 
 draw();
+// Ảnh rơi xuống
+const images = [
+  'anh1.jpg',
+  'anh2.jpg',
+  'anh3.jpg',
+  'anh4.jpg',
+  
+];
+
+function createFallingImage() {
+  const img = document.createElement('img');
+  img.src = images[Math.floor(Math.random() * images.length)];
+  img.className = 'falling-image';
+  img.style.left = `${Math.random() * window.innerWidth}px`;
+  img.style.animationDuration = `${Math.random() * 4 + 3}s`;
+  document.body.appendChild(img);
+  setTimeout(() => document.body.removeChild(img), 7000);
+}
+setInterval(createFallingImage, 400);
+
