@@ -42,6 +42,20 @@ body {
   }
 }
 
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-img {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
 .text {
   position: absolute;
   font-size: 20px;
